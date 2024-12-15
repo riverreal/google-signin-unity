@@ -55,7 +55,7 @@ namespace Google.Impl {
 
         user.IdToken = GoogleSignInImpl.GoogleSignIn_GetIdToken(userPtr);
 
-        user.AuthCode = GoogleSignInImpl.GoogleSignIn_GetServerAuthCode(self);
+        // user.AuthCode = GoogleSignInImpl.GoogleSignIn_GetServerAuthCode(self);
 
         string url = GoogleSignInImpl.GoogleSignIn_GetImageUrl(userPtr);
         if (url?.Length > 0) {
